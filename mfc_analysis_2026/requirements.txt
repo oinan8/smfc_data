@@ -1,0 +1,26 @@
+# Core scientific stack
+numpy>=1.26,<2.0
+pandas>=2.0,<3.0
+scipy>=1.11
+matplotlib>=3.8
+
+# End-to-end models
+neuralforecast>=2.0.0
+statsforecast>=1.7.0
+
+# Zero-shot foundation models
+chronos-forecasting>=2.0.0      # from chronos import BaseChronosPipeline, Chronos2Pipeline
+uni2ts>=0.1.0                   # from uni2ts.model.moirai import MoiraiForecast, MoiraiModule
+gluonts>=0.15.0                 # required by uni2ts for PandasDataset
+
+# Deep learning backend
+torch>=2.1.0
+transformers>=4.40.0
+
+# HuggingFace data access
+huggingface_hub>=0.22.0
+datasets>=2.19.0
+
+# Utilities
+scikit-learn>=1.4.0
+tqdm>=4.66

@@ -1,0 +1,35 @@
+name: mfc-forecasting
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  # Core scientific stack
+  - python>=3.10,<3.12
+  - numpy>=1.26,<2.0
+  - pandas>=2.0,<3.0
+  - scipy>=1.11
+  - matplotlib>=3.8
+
+  # Utilities
+  - scikit-learn>=1.4.0
+  - tqdm>=4.66
+
+  # Deep learning backend
+  - pytorch>=2.1.0
+
+  # Pip-installed packages
+  - pip
+  - pip:
+      # End-to-end models
+      - neuralforecast>=2.0.0
+      - statsforecast>=1.7.0
+
+      # Zero-shot foundation models
+      - chronos-forecasting>=2.0.0
+      - uni2ts>=0.1.0
+      - gluonts>=0.15.0
+
+      # HuggingFace ecosystem
+      - transformers>=4.40.0
+      - huggingface_hub>=0.22.0
+      - datasets>=2.19.0
