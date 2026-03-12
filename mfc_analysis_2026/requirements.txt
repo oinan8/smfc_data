@@ -11,7 +11,7 @@ statsforecast>=1.7.0
 # Zero-shot foundation models
 chronos-forecasting>=2.0.0      # from chronos import BaseChronosPipeline, Chronos2Pipeline
 uni2ts>=0.1.0                   # from uni2ts.model.moirai import MoiraiForecast, MoiraiModule
-gluonts>=0.15.0                 # required by uni2ts for PandasDataset
+gluonts>=0.14.0                 # required by uni2ts for PandasDataset
 
 # Deep learning backend
 torch>=2.1.0
